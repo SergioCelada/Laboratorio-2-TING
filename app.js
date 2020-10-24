@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 //Nuevas rutas
 var serviciosRouter = require('./routes/servicios');
 var bdRouter = require('./routes/bd');
-var mejorasRouter = require('./mejoras/bd');
+var mejorasRouter = require('./routes/mejoras');
 
 var app = express();
 
