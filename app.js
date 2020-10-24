@@ -10,9 +10,7 @@ var usersRouter = require('./routes/users');
 //Nuevas rutas
 var serviciosRouter = require('./routes/servicios');
 var bdRouter = require('./routes/bd');
-
-
-
+var mejorasRouter = require('./mejoras/bd');
 
 var app = express();
 
@@ -32,6 +30,7 @@ app.use('/users', usersRouter);
 //Nuevas rutas
 app.use('/servicios', serviciosRouter);
 app.use('/bd', bdRouter);
+app.use('/mejoras', mejorasRouter);
 
 
 // catch 404 and forward to error handler
