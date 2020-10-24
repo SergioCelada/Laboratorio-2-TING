@@ -31,7 +31,7 @@ app.use('/users', usersRouter);
 
 //Nuevas rutas
 app.use('/servicios', serviciosRouter);
-app.use('/bd', serviciosRouter);
+app.use('/bd', bdRouter);
 
 
 // catch 404 and forward to error handler
