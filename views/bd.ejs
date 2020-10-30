@@ -90,29 +90,31 @@
 			
 			<ul>
 				<% results.forEach(function(r) { %>
-				 <div class="col-md-4">
-					  <div class="work-box">
-						<a href="img/work-1.jpg" data-lightbox="gallery-mf">
-						  <div class="work-img">
-							<img src="img/work-1.jpg" alt="" class="img-fluid">
-						  </div>
-						  <div class="work-content">
-							<div class="row">
-							  <div class="col-sm-8">
-								<h2 class="w-title"><%= r.id %></h2>
-								<div class="w-more">
-								  <span class="w-ctegory"><%=r.name %></span> / <span class="w-date">18 Sep. 2018</span>
+					<div class="row">
+					 <div class="col-md-4">
+						  <div class="work-box">
+							<a href="img/work-1.jpg" data-lightbox="gallery-mf">
+							  <div class="work-img">
+								<img src="img/work-1.jpg" alt="" class="img-fluid">
+							  </div>
+							  <div class="work-content">
+								<div class="row">
+								  <div class="col-sm-8">
+									<h2 class="w-title"><%= r.id %></h2>
+									<div class="w-more">
+									  <span class="w-ctegory"><%=r.name %></span> / <span class="w-date">18 Sep. 2018</span>
+									</div>
+								  </div>
+								  <div class="col-sm-4">
+									<div class="w-like">
+									  <span class="ion-ios-plus-outline"></span>
+									</div>
+								  </div>
 								</div>
 							  </div>
-							  <div class="col-sm-4">
-								<div class="w-like">
-								  <span class="ion-ios-plus-outline"></span>
-								</div>
-							  </div>
-							</div>
+							</a>
 						  </div>
-						</a>
-					  </div>
+						</div>
 					</div>
 					<li><%= r.id %> - <%=r.name %></li>
 				<% }); %>
