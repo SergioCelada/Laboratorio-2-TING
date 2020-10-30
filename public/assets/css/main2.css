@@ -3329,8 +3329,8 @@
 	}
 
 	#header {
-		background-color: #04A981;
-		color: #04A981;
+		background-color: transparent;
+		color: #fdd1d1;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
