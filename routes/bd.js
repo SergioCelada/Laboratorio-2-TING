@@ -18,7 +18,7 @@ var router = express.Router();
 router.get('/', async (req, res) => {
 	try{
 		const client = await pool.connect();
-		const result = await client.query('SELECT * FROM test_table');
+		const result = await client.query('SELECT * FROM bd_table');
 		const results = { 'results': (result) ? result.rows : null};
 		res.render('bd', results );
 		client.release();

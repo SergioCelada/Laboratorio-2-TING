@@ -88,16 +88,16 @@
 				<% results.forEach(function(r) { %>
 					 <div class="col-md-4">
 						  <div class="work-box">
-							<a href="img/work-1.jpg" data-lightbox="gallery-mf">
+							<a href="<%=r.url_imagen%>" data-lightbox="gallery-mf">
 							  <div class="work-img">
-								<img src="img/work-1.jpg" alt="" class="img-fluid">
+								<img src="<%=r.url_imagen%>" alt="" class="img-fluid">
 							  </div>
 							  <div class="work-content">
 								<div class="row">
 								  <div class="col-sm-8">
-									<h2 class="w-title"><%= r.id %></h2>
+									<h2 class="w-title"><%=r.nombre %></h2>
 									<div class="w-more">
-									  <span class="w-ctegory"><%=r.name %></span> / <span class="w-date">18 Sep. 2018</span>
+									  <span class="w-ctegory"><%=r.descripcion %></span> 
 									</div>
 								  </div>
 								  <div class="col-sm-4">
